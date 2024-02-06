@@ -21,6 +21,8 @@ const Input: React.FC<InputProps> = ({
   return (
     <div className="relative">
     <input
+        onChange={onChange}
+        type={type}
         id={id}
         className="
             block
@@ -58,7 +60,7 @@ const Input: React.FC<InputProps> = ({
         peer-focus:-translate-y-3
     "
     htmlFor={id}>
-        Email
+        {label}
     </label>
     </div>
   )
