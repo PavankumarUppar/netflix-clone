@@ -17,7 +17,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
                 rounded-md
                 group-hover:opacity-90
                 sm:group-hover:opacity-0
-                delay-200
+                delay-300
                 w-full
                 h-[12vw]
             "
@@ -32,7 +32,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
                     z-10
                     invisible
                     sm:visible
-                    delay-200
+                    delay-300
                     w-full
                     scale-0
                     group-hover:scale-110
@@ -41,7 +41,34 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
                     group-hover:opacity-100
                 "
             >
-                
+                <img 
+                className="
+                    cursor-pointer
+                    object-cover
+                    transition
+                    duration
+                    shadow-xl
+                    rounded-md
+                    rounded-t-md
+                    w-full
+                    h-[12vw]
+                "
+                src={data.thumbnailUrl} alt="thumbnail" />
+                <div
+                className="
+                    z-10
+                    bg-zinc-100
+                    p-2
+                    lg:p-4
+                    absolute
+                    w-full
+                    transition
+                    shadow-md
+                    rounded-b-md
+                "
+                >
+
+                </div>
             </div>
         </div>
     )}
